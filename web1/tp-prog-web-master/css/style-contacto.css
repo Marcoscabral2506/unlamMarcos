@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	width: 100%;
+	font-family: Arial,Helvetica,sans-serif;
+	background: #e9e9e9;
+	color: black;
+}
+
+/*-------main-----------*/
+main{
+	display: grid;
+	grid-template-areas: "escrito explico"
+						"mapa mapa";
+	grid-gap: 80px;
+}
+/*---------------contenedor para dividir en 2 columnas----------------*/
+.escritura{
+	grid-area: escrito;
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+}
+
+.escritura input{
+	margin-top: 30px;
+	border-radius: 5px;
+}
+
+h2{
+	text-decoration: underline;
+	text-align: center;
+}
+
+#exp{
+	height: 90px;
+}
+
+#boton{
+	align-items: left;
+	width: 70px;
+	background-color:#0984e3;
+	color: #fff;
+}
+
+#boton:hover{
+	background-color:#74b9ff;
+	transition: 0.5s;
+	color: black;
+}
+
+.explicacion-tema{
+	grid-area: explico;
+	max-width: 600px;
+	margin-right: -120px;
+}
+
+.explicacion-tema h2{
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.explicacion-tema h3{
+	margin-top: 35px;
+}
+
+.ubicacion{
+	grid-area: mapa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+img{
+	width: 45%;
+}
+.ubicacion img{
+	border: 2px solid black;
+}
+/*---------------responsive--------------*/
+@media only screen and (max-width:620px) {
+  main{
+     display: grid;
+     grid-template-areas: "escrito" 
+                          "explico"
+                          "mapa" 
+                          "mapa";
+                        
+     grid-gap: 40px;
+  }
+  .escritura{
+  	margin: 0 auto;
+  	width: 70%;
+  }
+  .explicacion-tema{
+  	width: 100%;
+  }
+  .ubicacion{
+  	width: 100%;
+  }
+  img{
+  	width: 100%;
+  }
+}
+@media only screen and(max-width:1091px){
+	 main{
+     display: grid;
+     grid-template-areas: "escrito" 
+                          "explico"
+                          "mapa" 
+                          "mapa";
+                        
+     grid-gap: 40px;
+  }
+}

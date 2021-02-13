@@ -1,0 +1,135 @@
+/*-----contenedor curso------*/
+#curso-padre{
+  width: 90%;
+  padding: 60px 0;
+  margin:0 auto;
+}
+.text-medium{
+   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ecf0f1;
+}
+.cursos{
+   display: grid;
+  grid-template-areas: "uno dos tres"
+                       "cuatro cinco seis";
+  grid-gap: 40px;
+}
+.curso-info i{
+  margin-top: -50%;
+  color: yellow;
+}
+.curso1{
+	grid-area: uno;
+	display: flex;
+	flex-direction: column;
+	background-color: #39393b;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+a:hover{
+  text-decoration: none;
+}
+.curso2{
+  grid-area: dos;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.curso3{
+  grid-area: tres;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.curso4{
+  grid-area: cuatro;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.curso5{
+  grid-area: cinco;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.curso6{
+  grid-area: seis;
+  display: flex;
+  flex-direction: column;
+  background-color: #39393b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+/*-----efectos en cursos ----*/
+.curso1:hover,.curso2:hover, .curso3:hover, .curso4:hover, .curso5:hover, .curso6:hover{
+  transform: translateY(-7px);
+}
+.curso-img{
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+	position: relative;
+}
+.curso-img img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+.curso-content{
+	padding: 20px;
+}
+.curso-title{
+	margin-bottom: 20px;
+}
+.curso-info{
+	display: flex;
+	align-self: end;
+  align-items: center;
+}
+.precio{
+   margin-left: auto;
+  padding: 5px 20px;
+  background-color: #303032;
+  border-radius: 20px;
+}
+/*----------cursos parte responsive------------------*/
+@media only screen and (max-width: 1000px) {
+
+  .cursos{
+     display: grid;
+     grid-template-areas: "uno dos"
+                          "tres cuatro" 
+                         "cinco seis";
+                        
+     grid-gap: 40px;
+  }
+}
+@media only screen and (max-width:620px) {
+
+  .cursos{
+     display: grid;
+     grid-template-areas: "uno" 
+                          "dos"
+                          "tres" 
+                          "cuatro" 
+                         "cinco" 
+                         "seis";
+                        
+     grid-gap: 40px;
+  }
+}
+

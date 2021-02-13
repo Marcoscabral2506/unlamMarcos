@@ -1,0 +1,102 @@
+daño: Perjucio que se produce cuando un sistema falla
+Riesgo: producto entre magnitud de daño y la probabilidad que este tenga lugar
+amenaza: aquella situacion de daño cuyo riesgo de producirse es significativo
+
+Vulnerabilidad: deficiencia en un sistema susceptible de producir un fallo en el mismo.
+
+
+Tipos de vulne: Debida a la implementacion: Por mas que programes mejor con buena practica capas falla el host
+Debias al diseño, de programacion
+Debidas al uso
+
+Areas: Area de cliente:usuario final
+Area de red:
+Area de servidor: EL PEOR PARA  ATACAR:/
+
+La nube:
+Facilita acceso desde diferente ubicacion y dispositivos, depende lo que necesito puedo pagar, pedir mas servidores, reduccion de costos si no necesito 20 servidores no los ocupo
+
+Desventajas:Dependemops de la red de otra persona, perdida de informacion, Es la pc de otro D:
+
+Volume base ddos attacks:carga el ancho de banda
+pp ddos atacks intenta saturar el servidor y servicio
+low rate dos attacks: utiliza una vulnerabilidad en el diseño o implementacion de la app
+
+ejs Denegacion de servicios:
+Flooding:
+BotNet
+
+sniffers: (solo mirar)
+Todo el trafico que pasa de un extremo a otro lo mira, poder ver lo que va pasando, programa de captura de las tramas de red, es para fin docente,
+
+
+
+atacando navegadores-cliente
+tampering o data diddling: modificar info no autorizada, cambios en el cont de su pag
+ataques por js con fallos del navegador
+ataques drive by download..
+
+impactos-ranking:
+
+
+explotabilidad: que tan facil puedo aprovechar un vector, mayor puntuaje si es facil de atacar, menor si es dificil
+
+prevalencia de vulnerabilidad, que tan facil es que esa vulnerabilidad exista, se vea, desde lo disfundido a lo poco comun, en relacion con lo tecnlogico, hay errores q pueden tener complejidad pero por su base tecnica, pero esa vulnerabilidad tecnica esta en todos los sistemas, si es muy difundido va a tener un valor alto, pq es dificl que tenga exito en todo un sistema
+
+deteccion de vulnerabilidad, que tan facil es ver que existe la vulne, 
+impacto tecnico, apunta a donde puede llegar la vulnerabilidad, si el impacto tiene exito el impacto va a ser severo, pq los datos son lo mas valioso del servidor.
+
+los ataques a apps y sistema no son aislados, encadenan distintas tecnicas
+
+Ataques
+inyeccion: tengo informacion o datos no confiables y llega a un interprete de comandos o de consulta, ese dato va a ser interpretado y va a generar un comportamiento que no era el pensado al momento de desarrollar, puede acceder a datos de los que no deberia, o alterar datos.
+Explotabilidad: Facil 3 | Prevalencia Comun:2, detectabilidad facil:3, tecnico grave 3
+
+
+los frameworks protegen, ej en request en inyecciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

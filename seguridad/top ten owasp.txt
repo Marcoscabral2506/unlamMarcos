@@ -1,0 +1,35 @@
+OWASP Riesgo de seguridad en aplicaciones.
+Agente de amaneza e impacto de negocio no se pone porque puede ser muy amplio y especifico.
+
+Tipos de Ataques
+A1- Inyeccion  (puede ser en lenguajes, como django para inyectar phyton en java, no es solo sql)
+|->Prevencion: Uso de api o herramienta de ORMS, codificar con caracteres epeciales
+
+A3- Exposicion de datos sensibles: la info esta en transito cuando deja el lado del servidor para ir al lado del cliente o al reves, o almacenamiento en la bd. Cifrar en la app antes que en el moto de la bd
+
+A4- Entidad Externa de XML. Lenguaje definido con un set pequeño de tags,
+<foo> &xxe;</foo> el % & seria la entidad,  Y en xml define una entidad, y puede acceder a rutas del servidor, archivos de contraseñas, 
+
+a5- Perdida del control de acceso, se navega por las url, tratando de escalar priviligeios, url en paginas tipo ?id=3, Prevencion: comprobar nivel de acceso del objeto en el servidor, control de acceso unico, NADA debe ser controlado del lado de cliente de forma EXCLUSIVA
+
+a6 COnfiguracion de Seguridad Incorrecta, 
+
+a7-CrossSite, poder ejecturar codigo del lado del cliente, codigo de scripting que se ejecute de ese lado. El usuario hace click en algo, que le envia un codigo de script que envia un codigo de script al server y vuelve, por una accion mia va el codigo al browser y vuelve, y lo trato como si fuera algo confiable del server -> XSS REFLEJADO 
+ALMACENADO -> La victima no inicia nada, es afectada en 2do paso, el atacante pone en el servidor el script, que en luego la victima descargara o etc.
+DOM-> Ataques que modifican la pagina y su estructura.
+
+
+
+CSRF: Permite que los usuarios envien peticiones de cambio de estado, el atacante podra insertar su ataque dentro de una etiqueta de imagen en un sitio web o iframe.
+
+A8- Deserializacion insegura, de un valor que puede ser transferido de forma segura, a memoria.  
+Prevencion, 
+
+
+
+
+
+
+
+
+

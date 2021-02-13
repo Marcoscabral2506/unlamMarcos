@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+  	<link rel="stylesheet" type="text/css" href="css/gift-card-style.css">
+
+  	<!--Js para boton de menu-->
+  	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+  	<script type="text/javascript" src="js/giftcard.js"></script>
+  	<script type="text/javascript" src="js/carrito.js"></script>
+
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="index.html">Index</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="giftcard.html">Gift card</a></li>
+						<li><a href="calendario.html">Calendario</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	<!--boton que oculta y despliga el menu en modo responsive-->
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	<main class="main">
+		<section class="giftcard-contenedor">
+			<!--caja donde se mostrara la informacion-->
+				<div class="carta">
+					<div class="precio">
+						<span id="precio">$0000.-</span>
+					</div>
+					<div class="dato-carta">			
+						<h3 class="destinatario">GIFT CARD para</h3>
+						<h2 class="destinatario" id="destinatario">Destinatario</h2>
+					</div>
+				</div>
+
+				<div class="personalizar">
+					<!--Input del nombre de destinatario-->
+					<h3>Personalización de Giftcard</h3>
+					<input class="nombre-destinatario" type="text" name="nombre" placeholder=" Nombre Destinatario">
+					<br>
+
+					<!--Input de los colores-->
+					<p>Color</p>
+					 <div class="contenedor-de-colores">
+						<div class="colores-img">
+							<img src="img/gift-card/color1.png">
+							<input class="colores" type="radio" name="colores" id="celeste">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color2.png">
+							<input class="colores" type="radio" name="colores" id="violeta">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color3.png">
+							<input class="colores" type="radio" name="colores" id="verde">
+						</div>
+						<div class="colores-img">
+							<img src="img/gift-card/color4.png">
+							<input class="colores" type="radio" name="colores" id="amarillo">
+						</div>
+						<div class="colores-img">
+								<img src="img/gift-card/color5.png">
+							<input class="colores" type="radio" name="colores" id="naranja">
+						</div>
+					</div>
+						
+					<br>
+					
+					
+					<!--Input de las fuentes-->
+					<p>Tamaño de fuente</p>
+					 <div class="contenedor-de-fuentes">
+						<div class="fuentes-palabra">
+							<p class="tamanio">20px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente1">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">22px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente2">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">24px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente3">
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">28px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente4" >
+						</div>
+						<div class="fuentes-palabra">
+							<p class="tamanio">30px</p>
+							<input class="fuentes" type="radio" name="fuente1" id="fuente5">
+						</div>
+					</div>
+					
+					<!------------------Monto-->
+					<div class="monto">
+						<label for="monto">Monto $ </label>
+						<input type="text" name="monto" id="monto">
+					</div>
+					<!------------------ubicacion-->
+					<p>Ubicacion</p>
+					<div class="contenedor-ubicacion">
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion2.png">
+							<input class="ubicacion" type="radio" name="ubicacion1" id="ubicacion1">
+						</div>
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion1.png">
+							<input class="ubicacion" type="radio" name="ubicacion1" id="ubicacion2">
+						</div>
+						<div class="ubicaciones">
+							<img src="img/gift-card/posicion3.png">
+							<input class="ubicacion" type="radio" name="ubicacion1"id="ubicacion3">
+						</div>
+					</div>
+					
+					
+					<p>Fondo</p>
+					<!------------------fondo de colores ------>
+					<div class="contenedor-de-colores">
+						<div class="fondo-img">
+							<img src="img/gift-card/color1.png">
+							<input class="colores" type="radio" name="fondos" id="fondo1">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color2.png">
+							<input class="colores" type="radio" name="fondos"id="fondo2">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color3.png">
+							<input class="colores" type="radio" name="fondos"id="fondo3">
+						</div>
+						<div class="fondo-img">
+							<img src="img/gift-card/color4.png">
+							<input class="colores" type="radio" name="fondos"id="fondo4">
+						</div>
+						<div class="fondo-img">
+								<img src="img/gift-card/color5.png">
+							<input class="colores" type="radio" name="fondos"id="fondo5">
+						</div>
+					</div>
+
+					<button class="boton">CONFIRMAR</button>
+
+				</div>
+		</section>
+	</main>
+
+	<!--Footer-->
+	<footer class="footer">
+		<div class="datos-grupo">
+			<span>Andres Agustin 41263730.</span><br>
+			<span>Marcos Cabral 42684487.</span><br>
+			<span>Federico Rodriguez 41469289.
+			</span>
+		</div>
+		<div class="menu-inferior">
+			<a href="index.html">Inicio</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="giftcard.html">Gift card</a>
+		    <a href="calendario.html">Calendario</a>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+info critica: informacion necesaria para la organizacion
+
+sensitiva, si la conoce alguien antes, si llega antes, puede beneficiar o perjudicar
+
+contenedores de informacion:
+Sistema aislado: no tiene comunicacion con otros dispositivos +seguros.
+
+Sistema interconectados: tiene acceso a internet y esta interconectado con otras redes
+
+Seguridad: libre de cualquier peligro o daño.
+
+causas de inseguridad:
+estado de inseguridad activo-> tengo participacion activa para causar la inseguridad, x ej no desactivar los servicios de red q no necesito.
+est de inseguridad pasivo->al no conocer las medidas caigo en un estado de inseguridad
+
+Riesgos-Amenazas-Vulnerabilidad
+Riesgo-Probabilidad que algo pueda pasar(algo malo)
+Amenazas- algo externo que pueda influir en el sistema
+Vulnerabilidad- Particulares propia que aumentan mi riesgo que podrian ser aprovechadas por amenazas.
+
+Requisitos funcionales para seguridad
+
+
+Seguridad Logica
+Es la aplicacion de barreras y procedimientos que resguarden el acceso a los datos y solo se permita acceder a ellos a las personas autorizadas para hacelo. Roles, admin, password, encriptacion.
+-Control de acceso externo: dispositivos de control de puertos, firewall o puerta de seguridad, accesos publicos.
+-Administracion: admin de personal y usuarios, organizacion del personal
+
+Seguridad en moviles:
+usar contraseñas robustas y bloqueo automatico.
+hacer copias de seguridad periodicas
+
+Rastreo y gestion remotas de dispositivos:
+Software para realizar operaciones de forma remota sobre el equipo permitiendo:
+Rastear el movil
+Borrar datos, Bloquearlo, Obtener informacion de audios,videos.
+SOLO PARA PERDIDA Y ROBO
+
+Rastreo y gestion remota:
+
+Funcion de hash, se define como una funcion o metodo no reversible para generar un valor que represente de manera casi univoca a un dato.
+Info de entrada de tamaño variable ==>Funcion de hash =>> info de salida y tamaño fijo reducido.
+
+VPN: Estructura de red con soporte logico, permite trafico de info privada.
+
+Seguridad fisica: mecanismos hechos para proteger fisicamente cualquier recurso del sistema de amenazas producidads por el hombre o la naturaleza.
+
+
+integridad: informacion a lo largo de un proceso, este libre sin alterarse, esten correcto completo
+
+disponibilidad=un dato puede ser confidencial y yo tenga acceso, puede que cuando lo necesite por mas que tenga el derecho no este disponible, puede acceder pero no ya, como un estudio clinico.
+
+anonimato: no se pueda identificar la identidad de uno.
+
+Enfoque global: quizas puedo tener tremendo frontend, pero muy deficiente el backend, mal diseño, mal todo.
+Tenemos que tener un enfoque global, si yo hago un trabajo re bueno en proteger la bd, y por un error de desarrollo te cagan.
+tengo que proteger todo no solo la bd, sino dejo agujeros en el sistema, por eso tengo que tener una vision global.
+
+
+
+Triangulo ID Confidencialidad-integridad-disponibilidad
+mesa de 3 patas, si le saco una se cae.
+
+
+Confidencialidad-disponibilidad: si pones a todos todos pueden todo, siempre reducis la disponibilidad
+
+disponibilidad-Integridad: wikipedia, todos pueden poner y alguien viene con algo erroneo
+
+vpn es como un canal seguro y aislado de otras redes como las publicas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

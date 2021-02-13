@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--javascript-->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/carrito.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style-detalle.css">
+
+	<!--acordeon-->
+ 	<script type="text/javascript" src="js/acordeon.js"></script>
+
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero" class="sumar-carro">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="giftcard.html">Gift card</a></li>
+						<li><a href="calendario.html">Calendario</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	<!--boton que oculta y despliga el menu en modo responsive-->
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	
+	<!--Cuerpo de pagina-->	
+	<main>
+		<!--Detalle del curso y profesor-->
+		
+		<div class="flex-container">
+			<div id="detallecurso">
+				<h3>DETALLE DEL CURSO</h3>
+				<h4>Valor: $2000.</h4>
+				<h4>Tiempo de dedicación necesario: 30 minutos por dia.</h4>
+				<h4>Descripción del curso: Curso para personas que tengan algun conocimiento previo.</h4>
+				<h4>Requisitos Previos: </h4>
+				<ul>
+					<li><h5>HTML5</h5></li>
+					<li><h5>CSS3</h5></li>
+					<li><h5>JS</h5></li>
+				</ul>
+				<a href="formulario.html">
+				<input type="submit" name="boton" value="INSCRIBIRSE" id="inscri">
+				</a>
+				<h2>CONTENIDO POR CLASE</h2>
+				<div id="accordion">
+  					<h3>Primer mes</h3>
+  					<div class="panel">
+    					<p>HTML</p>
+  					</div>
+  					<h3>Segundo mes</h3>
+  					<div class="panel">
+    					<p>CSS3</p>
+  					</div>
+  					<h3>Tercer mes</h3>
+  					<div class="panel">
+    					<p>JavaScript</p>
+  					</div>
+  				</div>
+			</div>
+			<div id="imagenyprofesor">
+				<div id="imagencurso">
+					<img src="img/cursos/curso2.png">
+				</div>
+				<div id="profesor">
+					<div id="fotoprofesor">
+						<img src="img/cursos/profesores/profesor1.jpg">
+					</div>
+					<div id="detalleprofesor">
+						<h4>Roberto Leto:</h4>
+						<label>★★★★★</label>
+						<p>Es un profesor muy bueno, explica bien, y tiene buen trato con los alumnos. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Otros cursos-->
+		<div class="contiene">
+			<div id="diferentes-cursos">
+				<div id="curso">
+					<h4>MYSQL</h4>
+					<img src="img/cursos/curso3.png">
+					<h6 id="duracion">30 min</h6>
+					<h6 id="precio">$2200</h6>
+					<input type="submit"class="btn-buy"  name="boton-comprar" value="Comprar">
+				</div>
+			</div>
+			<div id="diferentes-cursos">
+				<div id="curso">
+					<h4>PYTHON</h4>
+					<img src="img/cursos/curso4.png">
+					<h6 id="duracion">30 min</h6>
+					<h6 id="precio">$1800</h6>
+					<input type="submit" class="btn-buy" name="boton-comprar" value="Comprar">
+				</div>
+			</div>
+			<div id="diferentes-cursos">
+				<div id="curso">
+					<h4>MEAN STACK</h4>
+					<img src="img/cursos/curso1.png">
+					<h6 id="duracion">30 min</h6>
+					<h6 id="precio">$2300</h6>
+					<input type="submit"class="btn-buy"  name="boton-comprar" value="Comprar">
+				</div>
+			</div>
+			<div id="diferentes-cursos">
+				<div id="curso">
+					<h4>PHP</h4>
+					<img src="img/cursos/curso5.png">
+					<h6 id="duracion">30 min</h6>
+					<h6 id="precio">$1500</h6>
+					<input type="submit" class="btn-buy" name="boton-comprar" value="Comprar">
+				</div>
+			</div>
+			<div id="diferentes-cursos">
+				<div id="curso">
+					<h4>REACT ANGULAR</h4>
+					<img src="img/cursos/curso6.png">
+					<h6 id="duracion">30 min</h6>
+					<h6 id="precio">$1700</h6>
+					<input type="submit" class="btn-buy" name="boton-comprar" value="Comprar">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!--Footer-->
+	<footer class="footer">
+		<div class="datos-grupo">
+			<span>Andres Agustin 41263730.</span><br>
+			<span>Marcos Cabral 42684487.</span><br>
+			<span>Federico Rodriguez 41469289.
+			</span>
+		</div>
+		<div class="menu-inferior">
+			<a href="index.html">Inicio</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="giftcard.html">Gift card</a>
+		    <a href="calendario.html">Calendario</a>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</footer>
+
+</body>
+</html>

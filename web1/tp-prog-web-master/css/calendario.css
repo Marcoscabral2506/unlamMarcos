@@ -1,0 +1,9 @@
+/*---calendario --*/
+.calendario{
+	background: red;
+	width: 80%;
+	margin: 0 auto;
+}
+.calendario img{
+	width: 100%;
+}

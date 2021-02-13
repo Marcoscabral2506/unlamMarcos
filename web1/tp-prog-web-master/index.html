@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+  	<link rel="stylesheet" type="text/css" href="css/pasos-style.css">
+
+  	<!--Slider jquery-->
+  	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  	<!--Js para boton de menu-->
+  	<script src="js/main.js"></script>
+  	
+	<script type="text/javascript" src="js/carrito.js"></script>
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="giftcard.html">Gift card</a></li>
+						<li><a href="calendario.html">Calendario</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	<!--boton que oculta y despliga el menu en modo responsive-->
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	
+	<!--Cuerpo de pagina-->	
+<main>
+	<div id="global">
+	   <section>
+	   	<!--Slider-->
+		<div id="slider">
+				<div class="galeria">
+					<div><img src="img/slider/img.jpg"></div>
+					<div><img src="img/slider/slider1.png"></div>
+					<div><img src="img/slider/slider2.png"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--Pasos para inscribirte a un curso-->
+		
+			<div class="section-title">
+					<h2>¿Como inscribirme?</h2>
+					<span>Sigue las siguientes instrucciones!</span>
+			</div>	
+				
+			<section class="pasos">
+				<div class="caja-paso">
+						<i class="fa fa-check-circle"></i>
+						<h3 class="paso-title">Ve a  <a href="formulario.html">inscripcion</a></h3>
+						<p class="paso-descripcion">Puedes dirigirte pulsando sobre la palabra azul.</p>
+					
+				</div>
+
+				<div class="caja-paso">
+					
+						<i class="fa fa-edit"></i>
+						<h3 class="paso-title">Rellena el formulario</h3>
+						<p class="paso-descripcion">Es importante que rellenes con tus datos personales correctamente, al finalizar de anotarte o de anotar a otra persona, toca el boton Inscribirse.</p>
+					
+				</div>
+
+				<div class="caja-paso">
+					
+						<i class="fa fa-credit-card"></i>
+						<h3 class="paso-title">Paga</h3>
+						<p class="paso-descripcion">Los medios de pago con los que puedes efectuar tu compra aparecerán más abajo.</p>
+					
+				</div>
+
+			</div>
+		</section>
+	</div>
+	<!----cursos para anotarte--->
+	<section id="curso-padre">
+			<section class="cursos">
+				<div class="curso1">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso1.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">MEAN STACK
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">70hs</p>
+						</div>
+					</div></a>
+				</div>
+				<div class="curso2">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso2.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">HTML CSS JS
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">24hs</p>
+							<p class="precio text-medium">$150</p>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="curso3">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso3.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">PYTHON
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">130hs</p>
+							<p class="precio text-medium">$500</p>
+						</div>
+					</div></a>
+				</div>
+				<div class="curso4">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso4.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">MYSQL
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">40hs</p>
+							<p class="precio text-medium">$220</p>
+						</div>
+					</div></a>
+				</div>
+				<div class="curso5">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso5.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">PHP
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">60hs</p>
+							<p class="precio text-medium">330</p>
+						</div>
+					</div></a>
+				</div>
+				<div class="curso6">
+					<a href="detalle.html">
+					<div class="curso-img">
+						<img src="img/cursos/curso6.png">
+					</div>
+					<div class="curso-content">
+						<p class="curso-title text-medium">React-Angular-Vuejs
+						</p>
+						<div class="curso-info">
+							<p class="text-medium">180hs</p>
+							<p class="precio text-medium">$666</p>
+						</div>
+					</div>
+				</a>
+				</div>
+			</section>
+			<!---------------------formas de pago----------------------->
+				<div class="titulo-pago">
+						<h2>Medios de pago</h2>
+				</div>	
+			<div class="medios-de-pago">
+				<div class="tarjetas">
+					<img src="img/medios-de-pago/mastercard.png">
+				</div>
+
+				<div class="tarjetas">
+					<img src="img/medios-de-pago/visa.png">
+				</div>
+
+				<div class="tarjetas">
+					<img src="img/medios-de-pago/bitcoin.png">
+				</div>
+
+				<div class="tarjetas">
+					<img src="img/medios-de-pago/paypal.png">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--Footer-->
+	
+	<footer class="footer">
+		<div class="datos-grupo">
+			<span>Andres Agustin 41263730.</span><br>
+			<span>Marcos Cabral 42684487.</span><br>
+			<span>Federico Rodriguez 41469289.
+			</span>
+		</div>
+		<div class="menu-inferior">
+			<a href="index.html">Inicio</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="giftcard.html">Gift card</a>
+		    <a href="calendario.html">Calendario</a>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</footer>
+</body>
+</html>

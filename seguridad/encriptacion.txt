@@ -1,0 +1,72 @@
+historia de la criptografia.
+
+Dk (Ek (m))=m
+
+m=texto que puedo interpretar, normal 
+
+D=funcion de cifrado
+e como parametro y m texto plano => seria 'C'
+k es el conjunto de las claves que tiene el sistema 
+
+
+clasicficacion, moderna asimetrica: en vez de basarse en movimientos de datos sustit y transpo, encontrar nuevos algoritmos que solucionen los problemas 
+
+sustitucion basada en alfabetos tienen equivalencias entre caracteres
+
+transposicion reorganizacion de informacion en filas y columnas
+
+Clasica por transposicion buscaba reorganizar el mensaje de forma que pierda su manera de expresar el contenido de la informacion, ordenado de manera q no puedo interpretar
+Sustitucion transformar en un mensaje en uno que no podia ser leido o interpretado, pero los signos o caracteres del msj eran reemplazados, no reorganizados.
+
+
+criptografia clasica: da vuelta un mensaje mezclandolo entre filas y columnas, n filas y siempre 5 columnas, inclusive espacios.
+f(m ->matriz ordenada, k nuevo orden de columnas);
+
+
+cifrador monoalfatico un unico alfabeto en la operacion para la transformacion, tipo español tiene la a mas usada en base a eso ya conoces mucho, cifrado de cesar.
+
+sustitucion polialfabetica: Cifrado de vigenere, el texto a cifrar tiene qeu ser igual de extenso que la clave, por cada letra del texto basado en una clave es remplazado
+
+
+Criptografia moderna gracias a computadoras.
+
+
+
+algoritmos simetricos. ventajas: Sencilla implementacion (no son pocos pasos, sino pasos simples). Algoritmo robusto, solo dispone del msj C es de tiempos extremadamente largos -> confiables. Velocidad del cifrado, cifrar a buena velocidad a comparacion de lo asimetricos.
+Desventajas: guerra fria muchos ubicaciones geograficas distintas, podia establecer una contraseña cuando se enviaba info pero no dos veces, se pueden acabar > puede funcionar para 2 personas, si tengo muchos es muuuuuuy complicado
+
+aes-rijndael: estandar actual, ganado en un concurso AES.
+
+
+CIFRADOS DE BLOQUES: 
+
+ECB_ mensaje dividido en partes y cada una cifrada de manera independiente
+
+
+Padding: rellena mensajes que tienen una longitud menor a la requerida, sobre todo en los algoritmos simetricos de bloque
+Bit-Padding, agrega un 1 y N cantidad de 0 hasta completar el tamaño.
+ISO/IEC 7816-4: Igual que bit padding pero agrega 80 y n 0.
+PKCS#7: agrega n cantidad de bytes identicos, su valor es la cantidad de bytes agregados.
+ISO 10126: n cantidad de bytes aleatorios hasta el ante ultimo, y finalmente un byte qeu tiene la cant de bytes agregados.
+ANXI X.923: n cantidad de 00, anteultimo byte que tiene la cant de bytes agregados.
+
+CBC: Cipher Block Chaining: msj dividio en partes, realiza un xor con el bloque antes de cifrar cada parte.
+
+CFB: Cipher Feedback, el msj dividido en partes, cifra un vector de inicializacion y al resultado un xor. Los bloques usan como enrada el texto cifrado para reemplazar el vector de inici.
+
+Cifrado de flujo: emplear secuencia random igual de longitud al msj. combinandola con el msj mediante un xor. Desventaja: la calve es tan larga como el msj.
+
+HASH: funcion para generar un valor que represente de manera casi univoca a un dato. USOS: Soporte para criptografia asimetric,a tablas de hash, verificacion de integridad.
+
+hash propiedades: r(m) es de longitud fija, independientemente de la longitud de m.
+dado m es facil calcular r(m)
+dado r(m) es imposible recuperar m.
+dado m es imposible obtener m' tal que r(m)=r(m')
+
+
+
+
+
+
+
+
