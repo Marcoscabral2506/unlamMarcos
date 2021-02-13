@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/style-contacto.css">
+
+ 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/carrito.js"></script>
+ 	<script type="text/javascript" src="js/validar-contacto.js"></script>
+
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+						<li><a href="giftcard.html">Gift card</a></li>
+						<li><a href="calendario.html">Calendario</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	<!--boton que oculta y despliga el menu en modo responsive-->
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	
+	<!--Cuerpo de pagina-->	
+	<main>
+		<form class="escritura" id="escritura">
+			<h2>CONTACTO</h2>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+			<input type="text" name="apellido" id="apellido" placeholder="Apellido">
+			<input type="email" name="email" id="email" placeholder="Email">
+			<input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+			<input id="exp" type="text" name="problema" placeholder="Explicar el motivo del contacto">
+			<input id=boton type="submit" value="ENVIAR">
+			<div id="mensaje" class="error">
+
+            </div>
+        </form>
+
+		<div class="explicacion-tema">
+			<h2>PASOS</h2>
+			<ol>
+				<li><h3>Queremos saber tu nombre y apellido para saber con quien nos estamos comunicando.</h3></li>
+				<li><h3>Pone un titulo del problema o la consulta que nos quiere hacer.</h3></li>
+				<li><h3>Expresate de una manera mas extensa sobre lo que nos quieras contar.</h3></li>
+			</ol>
+		</div>
+
+		<div class="ubicacion">
+			<h2>UBICACION</h2>
+			<img src="img/contacto/mapa.jpg">
+		</div>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<div class="datos-grupo">
+			<span>Andres Agustin 41263730.</span><br>
+			<span>Marcos Cabral 42684487.</span><br>
+			<span>Federico Rodriguez 41469289.
+			</span>
+		</div>
+		<div class="menu-inferior">
+			<a href="index.html">Inicio</a>
+			<a href="contacto.html">Contacto</a>
+			<a href="giftcard.html">Gift card</a>
+		    <a href="calendario.html">Calendario</a>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</footer>
+</body>
+</html>

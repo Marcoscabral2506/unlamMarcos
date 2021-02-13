@@ -1,0 +1,154 @@
+ejes tematicos: cocpetos y operacion
+proceso de desarrollo->orientado a ecomerce
+arquitectura->idem anterior
+
+ecomecr: intercambio de transacciones comerciales entre comprador y vendedor mediante medios electronicos, ya existia mediante telefonia. boom con internet.
+
+se fue dando paso a paso, fue evolucionando
+
+Driver:elementos contextuales (montañas,sierras, de ejemplo del rio) q dan soluciones a problemas existentes. generan problema y solucion a la vez.
+|-> data networks redes de datos, 
+intense competition->: objetivo vender mas, competir, tomar dominio del nuevocanal antes q competencia,
+globalizacion,
+information age -> los datos permiten conocer a los clientes,
+technologies, sin la evo de las tecno no podria ser posib
+automation, automatizar procesos abaratan costos
+l- > low cost, high quality, bajo costo alta calidad, por la cantidad de competencia, 1 de las ventajas del ecomerce es la reduccion de costos
+
+
+historia del comercio electronico.
+60s, toma los documentos comerciales y transmitirlo, mensaje EDI.
+68' se crea comite para regular al edi.
+89-> primer transmicion por arpanet (internet)
+compuServe, el primer comercio que vende sus servicios por internet, serv de comunicacion y contenido digital, red telefonica.
+
+75, primer estandar EDI, abarata la creacion de software.
+79, aldrich inventa el online shopping
+
+81, estandar ansix12 publicado
+82 BC primer compañia de ecomerce, y se formaliza el tcp/ip ->AVANCE para internet
+83 nace internet
+85 edifact estandar para europa y resto mundo, primer dominio .com
+89, primer proveedor de servicio de internet, isp.
+
+90 nace la www en cern, (http, html, browser)
+94 lycos primer buscador exitoso, neetscap navigator implementa SSL
+95 amazon y ebay
+97 primer transaccion de mobile commerce
+98 google y paypal
+
+2000-> mercado financiero entra en psicosis con necesidad de invertir
+05 primemr pataflorma para crear tiendas online SaaS
+07 primer iphone
+08 magento opensource para crear tiendas online
+09 bitcoin
+11 woocomerce plugin de wordpress
+12 4g, permitio que las paginas sean mejor vistas en dispositivos moviles
+13 china se convierte en el mayor mercado de comercio electronico
+16 trafico en dispositivos moviles supera al desktop.
+
+primeros pasos del comercio electronico, EDI
+capa de comunicacion entre ERPS (sistema de gestion de empresas, insumos, costos, sist internos) de dos empresas, *tenian erp distintos, dif manera de llamar a producots en dos empresas*
+surge el edi como intermedidado del erp, se usa entre 1 proveedor y un productor. -> casi una asociacion entre ambas empresas.
+
+
+ventajas del comercio electronico.
+-deslocalizacion del putno de compra venta: no tiene localizacion, puede estar disponible en todo mundo.
+-mayor conocimiento de los clientes: (vemos ropa, entramos, pregunto x el producto q vi). Las tiendas saben que productos vimos, navegamos, y refleja nuestro interes, nos ofrecen productos que interesan.
+- flexibilidad de medios de pago
+-creacion de nuevas relaciones comerciales, como sitios donde el consumidor define el producto y las empresas se ofrecen a satisfacer, o consumidor y consumidor
+-aumento de la gama de productos, realidad:no puedo mostrar productos por espacio fisico, ecomerce todos los productos que quieras :D
+-acceso a mercado global, asegurar que el producto llegue al destinatario en cualquier parte del mundo.
+-reduccion de costos, el precio de venta es el (costo + costo de comercializacion), no gastamos en local, impuestos, la venta en forma online es mas barata :)
+ 
+
+
+sitio web vs ecomerce.
+sitio que se registren usuarios ->tener relacion con el sitio y servicio.
+ecomerce-> vender
+
+persuadimos sitio, home,landing (ej,productos para playa), navegacion, buscador
+->producto evacuar todas las dudas del cliente antes de comprar -> checkout -> pide informacion de envio domicilio tarjeta.
+
+Nuestro negocio va a ser discripto por ambos
+modelo de negocio. ->descipcion de como una organizacion crea entrega y captura valor(primero)
+plan de negocio. -> un plan formal, para presentar
+
+
+modelo de negocio, forma en la que una organizacion crea distribuye y captura valor para los crientes.
+descripcion de los elementos constituyentes, descrp de la relacion entre elementos => FORMan marco de trabajo (framewrok). 
+No van los productos sino las proupuestas de valor.
+Una propuesta de valor justifica porque un cliente elije un producto sobre otro, resolver una problematica de forma unica.
+
+el producto debe satisfacer alguno de estos
+rendimiento, precio, diseño, personalizacion, novedad, marca /o/ estatus, reducc de costos, reducc de riesgos (te devolvemos el producto en 30 dias), realizar una tarea, 
+
+bussines model canvas
+dinamica del trabajo, consta de reunir los actores y reliberar acerca de cada uo de los bloques de la interaccion entre los adyacentes
+|->segmentos->target xd (alumnos primaria, secundaria, bachillerato) _> solo en identificar a quien le interesara nuestra propuesta de valor.
+
+para definir propuesta de valor puedo ver que NO ofrece mi competencia directa
+Canales: web 2.0, o tienda de apps movil y tablets
+
+
+Customer relationships: cuales canales nos vamos a comunicar con los segmentos, foro + chat, facebook, tw,google.
+Flujo de divisas, o entradas: Como capturamos el valor del cliente, publicidad web segmentada, permite dentro de la app ofrecer publicidad?. Acceso temporal a los recursos, tipo suscripcion.
+
+
+actividades claves: que necesitamos hacer para llevar a cabo la propuesta de valor, ej si tenemois la comunidad de usuario, entonces -> fomentar la colaboracion entre usuarios
+
+
+recursos claves: muy relacionada a la propuesta valor,
+
+keypartner: empresa individuo o servicio que son fundamentales para que demos la propuesta valor.(usuarios de la plataforma, redes sociales, cloud services)
+
+cost structure, desarrollo web, desarrollo de juegos matematicos, cloud services.
+
+ciclo de venta en el comercio electronico.
+antes necesitamos disponibilizar de los productos
+1. Promocionar, mediante acciones de marketing.
+2. Tenemos atencion del segmento, empieza la Venta, despues de evaluar, seleccionar y efectuar la compra.
+3. procesar orden, verifcacion de orden y armado de la misma.
+4. distribucion, la orden es despacha y enviada al destino.
+5. soporte al cliente, asistencia y a tencion.
+
+otras estrategias de negocio.
+offer-driven, nuestra propuesta de valor cambia e influye todo nuestro canvas.
+customer-driven, cambio el segmento o agregamos otro, necesitamos una nueva de valor nueva, formas de obtener flujo de dinero o publicitar nuevas.
+finance-driven, la forma que obtenemos valor o la forma de nuestros costos nos cambian el negocio. 
+resource-driven, uno de los socios cambian, cambia el modelo de negocio.
+
+
+plan de negocio->complemento del modelo de negocio
+debe tener definido el modelo de negocio, determinar la viabilidad economica y financiera.
+
+hoja de ruta sobre la cual sustentar el negocio en los prox años. Para buscar inversores, los inversores tienen info necesaria como para decidir invertir.
+
+8 secciones
+-Proyecciones financieras
+necesidades financieras
+gestion y organizacion
+
+resumen ejecutivo: un pantallazo del negocio en una sola pagina, mision info crimiento, info financiera
+descripcion de la empresa: necesidades del mercado a satisfacer
+producto o servicio, q se oprece y como va abenificar al cliente
+mercado analisis del mercado
+gestion y organizacion descripcion de la org y estructura que se adaptara al negocio.
+plan de marketing como vamos a llegar con nuestra propuesta valor, canales difusion, crecimiento.
+necesidades financieras, si necesitamos financiamento, cuanto se necesita, como la usamos, y cuando la podemos devolver.
+proyecciones financieras, describe el comercio y su evolucion a futuro.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

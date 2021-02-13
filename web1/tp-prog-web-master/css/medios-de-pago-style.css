@@ -1,0 +1,48 @@
+.titulo-pago{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	margin: 0 0 1.6em;
+}
+.medios-de-pago{
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.tarjetas{
+	width: 30%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	margin-bottom: 3em;
+}
+.tarjetas img{
+	width: 60%;
+}
+/*--------pagos responsive------*/
+@media screen and (max-width: 617px){
+	.medios-de-pago{
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.tarjetas{
+		width: 60%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.tarjetas img{
+		width: 100%;
+	}
+}

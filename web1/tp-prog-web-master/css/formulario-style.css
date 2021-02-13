@@ -1,0 +1,142 @@
+/*---------formulario----------*/
+.pag-formulario{
+	background: white;
+	width: 80%;
+	margin: 60px 50px 60px 100px;
+}
+.secc-form{
+	height: 240px;
+	padding: 0;
+}
+.texto-form{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.form-reg{
+margin-top: -12px;
+margin-left: -15px;
+margin-bottom: 0;	
+}
+input[type=text]{
+border-radius: 10px;
+box-shadow: none;
+border:1px solid rgb(63, 63, 63);
+margin: 15px;
+}
+input[type=submit]{
+border: none;
+border-radius: 10px;
+color: white;	
+padding: 2px;
+background-color: rgb(0, 162, 255);
+box-shadow: 2px 2px 3px gray;
+text-align: center;
+}
+.boton{
+	background-color: rgb(0, 162, 255);
+	color: white;
+	display: inline-block;
+	margin: 0px;
+	padding: 4px 5px;
+	text-decoration:none !important;
+	border-radius: 20px;
+	box-shadow: 2px 2px 3px gray;
+	text-align: center;
+}
+.agregar-Pers{
+	
+	margin-bottom: 15px;
+}
+
+.inscripcion{
+	display: flex;
+
+}
+.inscripcion button{
+border: none;
+border-radius: 10px;
+color: white;	
+padding: 2px;
+background-color: rgb(0, 162, 255);
+box-shadow: 2px 2px 3px gray;
+text-align: center;
+height: 40px;
+width: 120px; 	
+transform: translate(20%, 33%);
+margin-bottom: 52px;
+}
+.inscripcion p{
+background-color: rgb(0, 162, 255);
+padding: 1px 6px;
+border-radius: 5px;
+color: white;
+margin-top: 20px;
+height: 20px;
+transform: translate(0%, 13%);
+box-shadow: 2px 2px 3px gray;
+}
+
+/*         Input                   */
+::-webkit-input-placeholder {
+	text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+	text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+	text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+	text-align: center; 
+ }
+/*--------------------RESPONSIVE----------------------*/
+ @media screen and (max-width: 600px){
+	
+	main{
+		margin: 1rem  2rem  0rem  3.5rem !important;
+		padding: 0px;
+	}
+	.secc-form{
+		width: 100%;
+		align-items: center;
+		text-align: center;
+		height: auto;
+	}
+	.texto-form{
+		height: auto;
+		display: flex;
+		flex-direction:column;	
+	}
+	.form-reg{
+		width: 90%;
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+	}
+	.form-reg input[type=text]{
+		width: 80%;
+	}
+	.form-reg .boton{
+		width: 100px;
+	}
+	.inscripcion{
+	justify-content: space-around
+	}
+	.box-container{
+		height: 25em;
+		flex-direction:column;
+		align-content: center;
+	}
+	.base-box-1,
+	.base-box-2,
+	.base-box-3{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		width: 80%;
+		height: 30%;
+	}
+}
